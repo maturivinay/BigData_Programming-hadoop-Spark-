@@ -25,7 +25,7 @@ object Friends {
     val findcommon = common.reduceByKey((x, y) => x intersect y).sortByKey()
     findcommon.collect().take(10).foreach(x => {
       println(s"${x._1} -> (${x._2.mkString(" ")})")
-      findcommon.saveAsTextFile("C:\\Users\\matur\\Desktop\\UMKC\\bigdata_programming\\Lab_Assignment_3\\src\\main\\scala.output.txt")
+      findcommon.saveAsTextFile("C:\\Users\\matur\\Desktop\\UMKC\\bigdata_programming\\Lab_Assignment_3\\src\\main\\scala\\output_facebook")
     })
 
 

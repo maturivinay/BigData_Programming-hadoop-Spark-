@@ -4,7 +4,7 @@
 		module="lab_assignment_3_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20181102211721"
+		publication="20181103191828"
 	>
 		<description>
 		Lab_Assignment_3
@@ -32,5 +32,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.7" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-core_2.12" rev="2.1.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-sql_2.12" rev="2.1.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
